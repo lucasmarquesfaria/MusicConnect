@@ -7,12 +7,6 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Começando](#começando)
   - [Pré-requisitos](#pré-requisitos)
-- [Uso](#uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [API](#api)
-- [Testes](#testes)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
 - [Contato](#contato)
 - [Agradecimentos](#agradecimentos)
 
