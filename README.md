@@ -5,6 +5,7 @@
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Banco de Dados](#banco-de-dados)
 - [Começando](#começando)
   - [Pré-requisitos](#pré-requisitos)
 - [Contato](#contato)
@@ -40,6 +41,45 @@ O projeto foi desenvolvido com foco nos aspectos operacionais de Sistemas de Ger
   - Alpine.js para interatividade no cliente
   - Laravel Blade para templates
   - Vite para compilação de assets
+
+## Banco de Dados
+
+A estrutura do banco de dados do MusicConnect é composta pelas seguintes tabelas principais:
+
+- **usuario**
+  - `id`: Identificador único do usuário (int)
+  - `nome`: Nome completo do usuário (varchar)
+  - `nome_usuario`: Nome de usuário (varchar)
+  - `senha`: Senha criptografada (varchar)
+  - `foto_perfil`: Caminho para a foto de perfil (varchar)
+  - `descricao`: Descrição do usuário (text)
+  - `created_at`: Data de criação do usuário (timestamp)
+
+- **musica**
+  - `id`: Identificador único da música (int)
+  - `titulo`: Título da música (varchar)
+  - `genero`: Gênero musical (varchar)
+  - `data_upload`: Data de upload da música (datetime)
+  - `usuario_id`: ID do usuário que enviou a música (int)
+  - `arquivo_path`: Caminho do arquivo de música (varchar)
+
+- **projeto_musical**
+  - `id`: Identificador único do projeto (int)
+  - `nome`: Nome do projeto musical (varchar)
+  - `descricao`: Descrição do projeto (text)
+  - `criador_id`: ID do usuário criador do projeto (int)
+  - `created_at`: Data de criação do projeto (timestamp)
+
+- **feed_atividade**
+  - `id`: Identificador único da atividade (int)
+  - `usuario_id`: ID do usuário que realizou a atividade (int)
+  - `tipo_atividade`: Tipo da atividade (enum: 'upload_musica', 'nova_conexao', 'novo_projeto', 'novo_membro_projeto')
+  - `referencia_id`: ID de referência relacionada à atividade (int)
+
+### Diagrama do Banco de Dados
+![Diagrama do Banco de Dados](diagrama.jpeg)
+
+## Começando
 
 ### Pré-requisitos
 
