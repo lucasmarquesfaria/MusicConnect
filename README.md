@@ -1,7 +1,5 @@
 # MusicConnect
 
-![MusicConnect Logo](https://example.com/musicconnect-logo.png)
-
 ## Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
