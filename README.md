@@ -19,7 +19,6 @@ O projeto MusicConnect foi desenvolvido com foco nos aspectos operacionais de SG
 - PHP 7.4+
 - MySQL 8.0 / MariaDB 10.5+
 - HTML5, CSS3, JavaScript
-- [Outras bibliotecas ou frameworks utilizados]
 
 ## Estrutura do Banco de Dados
 
@@ -37,4 +36,3 @@ O banco de dados do MusicConnect consiste nas seguintes tabelas principais:
 
 - Professor M.Sc. Elias Gonçalves
 - Faculdades Doctum de Caratinga
-- [Outros agradecimentos relevantes]
